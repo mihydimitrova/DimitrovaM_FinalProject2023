@@ -1,0 +1,36 @@
+﻿<Window x:Class="DimitrovaM_FinalProject2023.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DimitrovaM_FinalProject2023"
+        mc:Ignorable="d"
+        Title="Menu" Height="932" Width="430">
+    <Window.Background>
+        <ImageBrush ImageSource="cherventoto charshafchebluri.png"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button x:Name ="mydata" BorderThickness="4" Content="My Data" Style="{StaticResource SF Bold}" FontSize="20" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="135" Height="58"  Background="Transparent" BorderBrush="#FF6F0C0C" Foreground="White" Margin="166,69.2,123,12" Grid.Row="3" Grid.RowSpan="2" Click="mydata_Click" >
+            <Button.Resources >
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="30"  ></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,40 @@
+﻿<Window x:Class="DimitrovaM_FinalProject2023.MyData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DimitrovaM_FinalProject2023" 
+        mc:Ignorable="d"
+        Title="MyData" Height="932" Width="430">
+    <Window.Background>
+        <ImageBrush ImageSource="cherventoto charshafchebluri.png"/>
+    </Window.Background>
+    <Grid>
+        <DataGrid x:Name="DataGrid_" Style="{DynamicResource MaterialDesignDataGrid}" Margin="25,91,26,541.4"/>
+        <Button Style="{DynamicResource MaterialDesignOutlinedDarkButton}" Content="Load Data" HorizontalAlignment="Center" Margin="197,843,171,0" VerticalAlignment="Top" Click="Button_Click" RenderTransformOrigin="0.331,5.677"/>
+        <Button Style="{DynamicResource MaterialDesignOutlinedDarkButton}" Content="Add Data" Margin="301,805,47,63.4" Click="Button_Click_1" />
+        <Button Style="{DynamicResource MaterialDesignOutlinedDarkButton}" Content="Update Data" Margin="42,803,300,63.4" Click="Button_Click_2" />
+        <Button Style="{DynamicResource MaterialDesignOutlinedDarkButton}" Content="Delete Data" Margin="176,809,163,70.4" Click="Button_Click_3" RenderTransformOrigin="0.5,0.5" />
+        <Label Content="Hips"  Background="Transparent" Foreground="White"  Margin="68,493,235,369.4" FontSize="20" RenderTransformOrigin="0.501,0.5"/>
+        <Label Content="Height" Background="Transparent" Foreground="White"  Margin="68,400,228,457.4" Style="{StaticResource SF Light Label}" FontSize="20"/>
+        <Label Content="Email" Background="Transparent" Foreground="White"  Margin="68,371,293,490.4" Style="{StaticResource SF Light Label}" FontSize="20"/>
+        <Label Content="Tops Size"  Background="Transparent" Foreground="White"  Margin="68,432,243,430.4" Style="{StaticResource SF Light Label}" FontSize="20"/>
+        <Label Content="Bottoms Size" Background="Transparent" Foreground="White"  Margin="68,463,185,392.4" Style="{StaticResource SF Light Label}" FontSize="20"/>
+        <TextBox x:Name="topssize" HorizontalAlignment="Left" Height="21" Margin="176,442,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.213,1.374"/>
+        <TextBox x:Name="height" HorizontalAlignment="Left" Height="23" Margin="176,409,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.213,1.374"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="24" Margin="176,376,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.213,1.374"/>
+        <TextBox x:Name="bottomssize" HorizontalAlignment="Left" Height="21" Margin="198,476,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.213,1.374"/>
+        <TextBox x:Name="hips" HorizontalAlignment="Left" Height="21" Margin="176,502,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.213,1.374"/>
+        <Label Content="Arms"  Background="Transparent" Foreground="White"  Margin="68,529,235,333.4" Style="{StaticResource SF Light Label}" FontSize="20"/>
+        <TextBox x:Name="arms" HorizontalAlignment="Left" Height="21" Margin="176,538,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.213,1.374"/>
+        <Label Content="Legs"  Background="Transparent" Foreground="White"  Margin="68,565,235,297.4" Style="{StaticResource SF Light Label}" FontSize="20"/>
+        <TextBox x:Name="legs" HorizontalAlignment="Left" Height="21" Margin="176,574,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.213,1.374"/>
+        <Label Content="Waist"  Background="Transparent" Foreground="White"  Margin="68,601,235,261.4" Style="{StaticResource SF Light Label}" FontSize="20"/>
+        <TextBox x:Name="waist" HorizontalAlignment="Left" Height="21" Margin="176,610,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.213,1.374"/>
+        <Label Content="Chest"  Background="Transparent" Foreground="White"  Margin="68,637,235,225.4" Style="{StaticResource SF Light Label}" FontSize="20" RenderTransformOrigin="0.501,0.5"/>
+        <TextBox x:Name="chest" HorizontalAlignment="Left" Height="21" Margin="176,646,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.213,1.374"/>
+        <Label Content="Shoulders"  Background="Transparent" Foreground="White"  Margin="68,673,235,189.4" Style="{StaticResource SF Light Label}" FontSize="20"/>
+        <TextBox x:Name="shoulders" HorizontalAlignment="Left" Height="21" Margin="176,682,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.213,1.374"/>
+
+    </Grid>
+</Window>
