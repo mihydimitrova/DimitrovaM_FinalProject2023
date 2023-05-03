@@ -12,20 +12,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace DimitrovaM_FinalProject2023
 {
     /// <summary>
-    /// Interaction logic for MyData.xaml
+    /// Interaction logic for MyData2.xaml
     /// </summary>
-    public partial class MyData : Window
+    public partial class MyData2 : Window
     {
-        public MyData()
+        public MyData2()
         {
             InitializeComponent();
         }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
@@ -37,7 +37,7 @@ namespace DimitrovaM_FinalProject2023
             try
             {
                 sqlCon.Open();
-                string query = "Select * from TailoringData";
+                string query = "Select * from TailoringData where Email ='" + this.email.Text + "'";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
                 cmd.ExecuteNonQuery();
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
@@ -117,9 +117,10 @@ namespace DimitrovaM_FinalProject2023
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            Menu o = new Menu();
+            Menu2 o = new Menu2();
             o.Show();
             this.Close();
         }
     }
 }
+

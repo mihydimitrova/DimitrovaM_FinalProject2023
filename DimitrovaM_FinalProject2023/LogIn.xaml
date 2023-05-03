@@ -34,7 +34,7 @@
         <Rectangle Fill="#FFD8D8" HorizontalAlignment="Center" Height="55"  Stroke="Black" VerticalAlignment="Bottom" Width="72" Margin="333,0,19,10.4" Grid.Row="12"/>
         <Image Source="Images/logo.png" RenderTransformOrigin="0,1" Margin="279,4.2,-36,6.4" Grid.Row="12"/>
         <Button HorizontalAlignment="Left" Margin="333,4.2,0,0" Grid.Row="12" VerticalAlignment="Top" Width="72" Height="55" Background="Transparent"/>
-        <Button Content="Submit" x:Name ="LogInGo" Margin="184,14.333,191.333,16" BorderThickness="4" Grid.Row="10" Background="Transparent" Foreground="White" Click="SignUpGo_Click" RenderTransformOrigin="0.5,0.501" >
+        <Button Content="Submit" x:Name ="LogInGo" Margin="184,14.6,162,16" BorderThickness="4" Grid.Row="10" Background="Transparent" Foreground="White" Click="SignUpGo_Click" RenderTransformOrigin="0.5,0.501" >
             <Button.Resources >
                 <Style TargetType="Border" >
                     <Setter Property="CornerRadius" Value="15"  ></Setter>

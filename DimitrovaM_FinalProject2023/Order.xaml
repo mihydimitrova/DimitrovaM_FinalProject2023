@@ -1,0 +1,46 @@
+﻿<Window x:Class="DimitrovaM_FinalProject2023.Order"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DimitrovaM_FinalProject2023"
+        mc:Ignorable="d"
+        Title="Order" Height="932" Width="430" Foreground="#FFFCFCFC">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="cherventoto charshafchebluri.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="DataGrid_"  Margin="31,91,20,56.4" Grid.RowSpan="5" />
+
+        <Label Content="Orders Database" HorizontalAlignment="Left" Margin="77,29,0,0" VerticalAlignment="Top" FontSize ="30" Height="62" Width="255" Foreground="#FFFCFCFC"/>
+        <Button Grid.Row="13" Content="Load Data" HorizontalAlignment="Center" Margin="153,20,147,0" VerticalAlignment="Top" Click="Button_Click" RenderTransformOrigin="0.331,5.677" Height="39" Width="124"/>
+        <Button Grid.Row="7" Content="Add Data" Margin="296,22.6,44,10.4" Click="Button_Click_1" RenderTransformOrigin="0.558,0.476" />
+        <Button Grid.Row="7" Content="Update Data" Margin="31,22.6,297,10.4" Click="Button_Click_2" />
+        <Button Grid.Row="7" Content="Delete Data" Margin="153,22.6,164,10.4" Click="Button_Click_3" RenderTransformOrigin="0.5,0.5" />
+        <TextBlock Text="Email" Background="Transparent" Foreground="White"  Margin="59,59.6,302,10.4" FontSize="20" Grid.Row="4"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="24" Margin="197,65.6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.213,1.374" Grid.Row="4"/>
+        <TextBlock Text="Type" Background="Transparent" Foreground="White"  Margin="59,4.6,302,65.4" FontSize="20" Grid.Row="5"/>
+        <TextBox x:Name="type" HorizontalAlignment="Left" Height="24" Margin="197,9.6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.213,1.374" Grid.Row="5"/>
+        <TextBlock Text="Fabric" Background="Transparent" Foreground="White"  Margin="59,48.6,302,21.4" FontSize="20" Grid.Row="5"/>
+        <TextBox x:Name="fabric" HorizontalAlignment="Left" Height="24" Margin="197,54.6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.213,1.374" Grid.Row="5"/>
+        <TextBlock Text="Comments" Background="Transparent" Foreground="White"  Margin="59,4.6,257,65.4" FontSize="20" Grid.Row="6"/>
+        <TextBox x:Name="comments" HorizontalAlignment="Left" Height="50" Margin="197,9.6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.213,1.374" Grid.Row="6"/>
+        <TextBlock Text="ID" Background="Transparent" Foreground="White"  Margin="59,58.6,302,11.4" FontSize="20" Grid.Row="6"/>
+        <TextBox x:Name="id" HorizontalAlignment="Left" Height="24" Margin="197,64.6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.213,1.374" Grid.Row="6"/>
+        <Rectangle Fill="#FFD8D8" HorizontalAlignment="Center" Height="63"  Stroke="Black" VerticalAlignment="Bottom" Width="87" Margin="324,0,13,9.4" Grid.Row="8"/>
+        <Image Source="Images/logo.png" RenderTransformOrigin="0,1" Margin="284,16.6,-25,0.4" Grid.Row="8"/>
+        <Button Background="Transparent" HorizontalAlignment="Left" Height="62" Margin="324,27.6,0,0" Grid.Row="8" VerticalAlignment="Top" Width="87" Click="Button_Click_4"/>
+    </Grid>
+</Window>

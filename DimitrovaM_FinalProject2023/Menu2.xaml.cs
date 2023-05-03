@@ -23,5 +23,19 @@ namespace DimitrovaM_FinalProject2023
         {
             InitializeComponent();
         }
+
+        private void mydata_Click(object sender, RoutedEventArgs e)
+        {
+            MyData2 m = new MyData2();
+            m.Show();
+            this.Close();
+        }
+
+        private void order_Click(object sender, RoutedEventArgs e)
+        {
+            Order2 o = new Order2();
+            o.Show();
+            this.Close();
+        }
     }
 }

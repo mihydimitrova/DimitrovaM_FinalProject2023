@@ -40,12 +40,20 @@
         <Image Source="Images/logo.png" RenderTransformOrigin="0,1" Margin="279,4.2,-36,6.4" Grid.Row="12"/>
         <Button x:Name="home" HorizontalAlignment="Left" Margin="333,4.2,0,0" Grid.Row="12" VerticalAlignment="Top" Width="72" Height="55" Background="Transparent"/>
 
-        <Button Content="Submit" x:Name ="SignUpGo" Margin="184,14.333,191.333,16" BorderThickness="4" Grid.Row="10" Background="Transparent" Foreground="White" Click="SignUpGo_Click" RenderTransformOrigin="0.5,0.501" >
+        <Button Content="Submit" x:Name ="SignUpGo" Margin="179,8.6,157,15" BorderThickness="4" Grid.Row="10" Background="Transparent" Foreground="White" Click="SignUpGo_Click" RenderTransformOrigin="0.5,0.501" >
             <Button.Resources >
                 <Style TargetType="Border" >
                     <Setter Property="CornerRadius" Value="15"  ></Setter>
                 </Style>
             </Button.Resources>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.066"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
         </Button>
     </Grid>
 </Window>

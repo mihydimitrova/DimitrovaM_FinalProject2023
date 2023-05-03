@@ -25,12 +25,22 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Button x:Name ="mydata" BorderThickness="4" Content="My Data" Style="{StaticResource SF Bold}" FontSize="20" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="135" Height="58"  Background="Transparent" BorderBrush="#FF6F0C0C" Foreground="White" Margin="166,69.2,123,12" Grid.Row="3" Grid.RowSpan="2" Click="mydata_Click" >
+        <Button x:Name ="mydata" BorderThickness="4" Content="My Data" Style="{StaticResource SF Bold}" FontSize="20" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="135" Height="58"  Background="Transparent" BorderBrush="#FF6F0C0C" Foreground="White" Margin="154,1.6,135,10" Grid.Row="4" Click="mydata_Click" >
             <Button.Resources >
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="30"  ></Setter>
                 </Style>
             </Button.Resources>
+        </Button>
+        <Button x:Name ="order" BorderThickness="4" Content="Order" FontSize="20" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="135" Height="58"  Background="Transparent" BorderBrush="#FF6F0C0C" Foreground="White" Margin="154,10,135,1.6" Grid.Row="5" Click="order_Click" >
+            <Button.Resources >
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"  />
+                </Style>
+            </Button.Resources>
+            <Button.Style>
+                <StaticResource ResourceKey="SF Bold"/>
+            </Button.Style>
         </Button>
     </Grid>
 </Window>

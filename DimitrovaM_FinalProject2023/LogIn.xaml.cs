@@ -45,10 +45,16 @@ namespace DimitrovaM_FinalProject2023
                 sqlCmd.Parameters.AddWithValue("@Password", pass2.Password);
 
                 int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
-                if (count == 1)
+                if (count == 1 && email2.Text == "admin@gmail.com")
                 {
                     Menu menu = new Menu();
                     menu.Show();
+                    this.Close();
+                }
+                else if(count == 1)
+                {
+                    Menu2 m2 = new Menu2();
+                    m2.Show();
                     this.Close();
                 }
                 else

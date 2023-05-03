@@ -30,5 +30,12 @@ namespace DimitrovaM_FinalProject2023
             m.Show();
             this.Close();
         }
+
+        private void order_Click(object sender, RoutedEventArgs e)
+        {
+            Order o = new Order();
+            o.Show();
+            this.Close();
+        }
     }
 }
